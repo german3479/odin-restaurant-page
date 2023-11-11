@@ -19,6 +19,18 @@ nav img {
     max-height: 85px;
     padding: 5px;
 }
+#tabs {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    padding: 2.5rem;
+}
+#tabs button {
+    border: none;
+    background: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
 #restaurant-hero {
     min-height: 40vh;
     display: flex;
@@ -31,4 +43,48 @@ nav img {
     text-align: center;
     color: white;
     padding: 1.5rem 3rem;
+}
+
+/* Tab Area */
+#tabArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab {
+    width: 95%;
+    padding: 15px 30px;
+}
+
+/* Menu Tab */
+#menu-tab {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+#menu-tab h3 {
+    margin-bottom: 0.7rem;
+}
+.itemsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 0.8rem;
+}
+.menuItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 7px 14px;
+    width: 200px;
+}
+.menuItem img {
+    width: 100%;
+    min-height: 128px;
+}
+
+@media (max-width: 480px){
+    .tab {
+        width: auto;
+    }
 }

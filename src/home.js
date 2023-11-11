@@ -20,11 +20,31 @@ export function makeHome(){
     restaurantHero.appendChild(restaurantDesc);
     restaurantHero.setAttribute('id', 'restaurant-hero');
 
+    const tabs = document.createElement('div');
+    tabs.setAttribute('id', 'tabs');
+    const homeButton = document.createElement('button');
+    homeButton.innerText = "HOME";
+    homeButton.setAttribute('id', 'homeBtn');
+    const menuButton = document.createElement('button');
+    menuButton.innerText = "OUR MENU";
+    menuButton.setAttribute('id', 'menuBtn');
+    const contactButton = document.createElement('button');
+    contactButton.innerText = "CONTACT US";
+    contactButton.setAttribute('id', 'contactBtn');
+    tabs.appendChild(homeButton);
+    tabs.appendChild(menuButton);
+    tabs.appendChild(contactButton);
+
     navContent.appendChild(navImg);
     navContent.appendChild(navSpan);
     navContent.setAttribute('id', 'nav-content');
     nav.appendChild(navContent);
 
+    const tabArea = document.createElement('div');
+    tabArea.setAttribute('id', 'tabArea');
+
     contentDiv.appendChild(nav);
+    contentDiv.appendChild(tabs);
     contentDiv.appendChild(restaurantHero);
+    contentDiv.appendChild(tabArea);
 }
