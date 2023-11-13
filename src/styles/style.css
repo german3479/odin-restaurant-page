@@ -56,6 +56,42 @@ nav img {
     padding: 15px 30px;
 }
 
+/* Intro Tab */
+.intro-tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.intro-tab img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.intro-tab .content-section {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.intro-tab .content-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.intro-tab .content-section p {
+    font-size: 18px;
+    margin-bottom: 0;
+    color: #555;
+}
+
+
 /* Menu Tab */
 #menu-tab {
     display: flex;
@@ -83,7 +119,54 @@ nav img {
     min-height: 128px;
 }
 
-@media (max-width: 480px){
+/* Contact Tab */
+#contact-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-tab form {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-tab label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#contact-tab input,
+#contact-tab textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact-tab button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact-tab button:hover {
+    background-color: #45a049;
+}
+
+
+
+@media (max-width: 538px){
     .tab {
         width: auto;
     }
